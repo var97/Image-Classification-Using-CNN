@@ -26,7 +26,7 @@ classifier = Sequential()
 input images which are colored images so we are using 3 in input shape arguments and dimension
  of images as 64*64 because we are working on CPU and don't want to waste more time on our code
  to execute"""
-#You can dimensions of input images accordingly like 128*128 or 256*256 if you have higher system configurations but I recommend you to use 64*64 dimension if you are working on CPU
+#You can use dimensions of input images accordingly like 128*128 or 256*256 if you have higher system configurations but I recommend you to use 64*64 dimension if you are working on CPU
 classifier.add(Convolution2D(32, (3, 3), input_shape = (64, 64, 3), activation = 'relu'))
 
 # Step 2 - Pooling
